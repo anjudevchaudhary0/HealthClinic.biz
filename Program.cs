@@ -27,11 +27,8 @@ using (var scope = app.Services.CreateScope())
     SeedData.Initialize(context);
 }
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseAuthorization();
 app.MapControllers();
