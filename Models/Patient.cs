@@ -17,7 +17,7 @@ namespace HealthClinicDemo.Api.Models
         public int Age { get; set; }
         public DateTime DateOfBirth { get; set; }
         public string Phone { get; set; }
-        public byte[] Picture { get; set; }
+        public byte[]? Picture { get; set; }
         public bool Deleted { get; set; }
         public int TenantId { get; set; }
         public Tenant Tenant { get; set; }

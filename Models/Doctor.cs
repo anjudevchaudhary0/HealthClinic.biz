@@ -12,7 +12,7 @@ namespace HealthClinicDemo.Api.Models
         public string Phone { get; set; }
         public string Mobile { get; set; }
         public string Email { get; set; }
-        public byte[] Picture { get; set; }
+        public byte[]? Picture { get; set; }
         public bool Deleted { get; set; }
         public int TenantId { get; set; }
         public Tenant Tenant { get; set; }
