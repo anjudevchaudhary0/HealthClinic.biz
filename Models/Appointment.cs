@@ -1,9 +1,11 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace HealthClinicDemo.Api.Models
 {
     public abstract class Appointment
     {
+        [Key]
         public int AppointmentId { get; set; }
         public int PatientId { get; set; }
         public Patient Patient { get; set; }
